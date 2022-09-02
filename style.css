@@ -41,6 +41,14 @@ body{
     color: #555;
 }
 
+.history a{
+    color: #000;
+}
+
+.history a:hover{
+    color: #555;
+}
+
 .heading{
     margin-bottom: 40px;
 }
@@ -71,6 +79,12 @@ body{
     align-items: center;
     border-radius: 12px;
     background: #fff;
+    cursor: pointer;
+}
+
+.login:hover{
+    background: #eee;
+    box-shadow: 0 0 5pt 0.5pt #D3D3D3;
 }
 
 .a{
@@ -81,6 +95,7 @@ body{
     border-radius: 50%;
     background: transparent;
     border: 1px solid #ddd;
+    background: #fff;
 }
 
 .a span{
@@ -88,14 +103,6 @@ body{
     left: 5.2px;
     top: 0.1px;
 }
-
-/* .a{    
-
-    border-radius: 100%;
-    padding: ;
-    background: blue;
-    color: #000;
-} */
 
 .login .left{
     display: flex;
@@ -117,6 +124,7 @@ body{
     color: black;
     font-size: 15px;
     font-weight: 900;
+    color: green;
 }
 
 .login .left .details{
@@ -124,11 +132,18 @@ body{
     align-items: flex-start;
     gap: 20px;
     font-size: 12px;
+    font-weight: 500;
 }
 
 .change{
     font-size: 10px;
     padding: 0px 18px;
+}
+
+.change:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color: #444;
 }
 
 /* login css */
@@ -188,7 +203,7 @@ input[type="text"]{
     justify-content: flex-start;
     /* flex-wrap: wrap; */
     gap: 40px; 
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .fname p, .lname p{
@@ -281,10 +296,12 @@ input[type="text"]{
     position: relative;
     height: 18px;
     aspect-ratio: 1;
-    background: #000;
+    background: transparent;
+    border: 1px solid #bbb;
     margin: 0 6px 0 0;
     border-radius: 50%;
     transform: translateY(-2px);
+    cursor: pointer;
 }
 
 .address-type .radio::after{
@@ -313,7 +330,9 @@ input[type="text"]{
     justify-content: flex-start;
 }
 
-
+input:focus{
+    box-shadow: 0 0 5pt 0.5pt #D3D3D3;
+}
 
 .home p, .office p{
     font-size: 11px;
@@ -336,6 +355,7 @@ input[type="text"]{
     background: transparent;
     padding: 15px 35px;
     border-radius: 6px;
+    cursor: pointer;
 }
 
 .btn-primary{
@@ -362,6 +382,12 @@ input[type="text"]{
     padding: 12px;
     gap: 30px;
     margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.payment:hover{
+    background: #eee;
+    box-shadow: 0 0 5pt 0.5pt #D3D3D3;
 }
 
 .payment p{
@@ -372,7 +398,7 @@ input[type="text"]{
     position: relative;
     height: 20px;
     aspect-ratio: 1;
-    background: transparent;
+    background: #fff;
     border: 1px solid #ddd;
     border-radius: 100%;
     color: #000;
@@ -557,6 +583,10 @@ input[type="text"]{
 }
 
 @media screen and (max-width: 468px){
+    .sub-container{
+        margin-top:0;
+    }
+
     .login .left .details{
         flex-wrap: wrap;
         gap: 0;
@@ -569,12 +599,13 @@ input[type="text"]{
 
 @media screen and (max-width: 360px){
     .sub-container{
+        padding: 20px;
         margin-top: 0;
     }
 
     .login .left .details p{
-        font-size: 9px;
-        font-weight: 700;
+        font-size: 12px;
+        font-weight: 500;
     }
 
     .address-type .heading{
@@ -594,6 +625,14 @@ input[type="text"]{
     .btns{
         flex-wrap: wrap;
         justify-content: center;
+    }
+
+    .login .left{
+        gap: 5px;
+    }
+
+    .change{
+        padding-right: 12px;
     }
 }
 
