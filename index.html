@@ -35,7 +35,7 @@
                                         <p class="name">Bhavishya Upadhyay</p>
                                         <p class="phone-num">+9179-XX-9179</p>
                                     </div>
-                                </div>
+                                </div> 
                             </div>
                             <div class="change">
                                 <p>CHANGE</p>
@@ -51,73 +51,138 @@
                         </div>
                         <!-- shipping addresses end -->
                         <!-- form starts -->
-                        <form class="form">
-                            <div class="name">
-                                <div class="fname">
-                                    <p>First Name*</p>
-                                    <input type="text" class="fname-input input" placeholder="First Name">
-                                </div>
-                                <div class="lname">
-                                    <p>Last Name*</p>
-                                    <input type="text" class="lname-input input" placeholder="Last Name">
-                                </div>
-                            </div>
-                            <div class="postal">
-                                <div class="postal-code">
-                                    <p>Postal Code*</p>
-                                    <input type="text" class="postal-input input" placeholder="Postal Code">
-                                </div>
-                                <div class="apt-suite">
-                                    <p>Apt, Suite*</p>
-                                    <input type="text" class="apt-input input" placeholder="Apartment No.">
-                                </div>
-                            </div>
-                            <div class="city-country">
-                                <div class="city">
-                                    <p>City*</p>
-                                    <input type="text" class="city-input input" placeholder="City">
-                                </div>
-                                <div class="country">
-                                    <p>Country*</p>
-                                    <input type="text" class="country-input input"placeholder="Country" >
-                                </div>
-                            </div>
-                            <div class="address">
-                                <p>Address*</p>
-                                <input type="text" class="address-input input" placeholder="Address">
-                            </div>
-
-                            <div class="address-type">
-                                <p class="heading">Address Type</p>
-                                <div>
-                                    <div class="home">
-                                        <div class="radio" id="radio1"></div>
-                                        <p>Home <span>(All Day Delivery)</span></p>
+                        <div class="form-container">
+                            <form class="form">
+                                <div class="name">
+                                    <div class="fname">
+                                        <p>First Name*</p>
+                                        <input type="text" class="fname-input input" placeholder="First Name">
                                     </div>
-                                    <div class="office">
-                                        <div class="radio" id="radio2"></div>
-                                        <p>Office <span>(Delivery between 10 AM - 5 PM)</span></p>
+                                    <div class="lname">
+                                        <p>Last Name*</p>
+                                        <input type="text" class="lname-input input" placeholder="Last Name">
                                     </div>
                                 </div>
-                            </div>
-
-                            <div class="btns">
-                                <button class="btn-primary btn">Save and Deliver Here</button>
-                                <button class="btn-secondary btn">Cancel</button>
-                            </div>
-
-                            <div class="payment">
-                                <div class="c">
-                                    <span>c</span>
+                                <div class="postal">
+                                    <div class="postal-code">
+                                        <p>Postal Code*</p>
+                                        <input type="text" class="postal-input input" placeholder="Postal Code">
+                                    </div>
+                                    <div class="apt-suite">
+                                        <p>Apt, Suite*</p>
+                                        <input type="text" class="apt-input input" placeholder="Apartment No.">
+                                    </div>
                                 </div>
-                                <p>PAYMENT METHOD</p>
+                                <div class="city-country">
+                                    <div class="city">
+                                        <p>City*</p>
+                                        <input type="text" class="city-input input" placeholder="City">
+                                    </div>
+                                    <div class="country">
+                                        <p>Country*</p>
+                                        <input type="text" class="country-input input" placeholder="Country">
+                                    </div>
+                                </div>
+                                <div class="address">
+                                    <p>Address*</p>
+                                    <input type="text" class="address-input input" placeholder="Address">
+                                </div>
+                                
+                                <div class="address-type">
+                                    <p class="heading">Address Type</p>
+                                    <div>
+                                        <div class="home">
+                                            <div class="radio" id="radio1"></div>
+                                            <p>Home <span>(All Day Delivery)</span></p>
+                                        </div>
+                                        <div class="office">
+                                            <div class="radio" id="radio2"></div>
+                                            <p>Office <span>(Delivery between 10 AM - 5 PM)</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="btns">
+                                    <button type="button" class="btn-primary btn save">Save and Deliver Here</button>
+                                    <button class="btn-secondary btn">Cancel</button>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="payment">
+                            <div class="c">
+                                <span>c</span>
                             </div>
-                            
-                        </form>
+                            <p>PAYMENT METHOD</p>
+                        </div>
+                        
+                        <div class="payment-container">
+                            <form class="form form-pay">
+                                <div class="credit-card">
+                                    <div class="pradio1"></div>
+                                    <div class="card-details">
+                                        <div class="main1-heading">
+                                            <i class="fas fa-credit-card"></i>
+                                            <p>Credit/Debit Card</p>
+                                        </div>
+                                        <div class="card-number">
+                                            <p>Enter Card Number*</p>
+                                            <div class="c-number-icons">
+                                                <input type="text" class="card-input  pinput" maxlength="19" id="card-input1" placeholder="xxxx xxxx xxxx xxxx">
+                                                <div class="icons">
+                                                    <i class="fa-brands fa-cc-amex" id="amex"></i>
+                                                    <i class="fa-brands fa-cc-visa" id="visa"></i>
+                                                    <i class="fa-brands fa-cc-diners-club" id="diners"></i>
+                                                    <i class="fa-brands fa-cc-mastercard" id="mastercard"></i>
+                                                    <i class="fa-brands fa-cc-jcb" id="jcb"></i>
+                                                    <i class="fa-brands fa-cc-discover" id="discover"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="expiry-date">
+                                            <div class="expiry">
+                                                <p>Expiry Date*</p>
+                                                <input type="text" class="month pinput" maxlength="9" placeholder="MM/YYYY">
+                                            </div>
+                                            <div class="cvv">
+                                                <p>CVV*</p>
+                                                <input type="password" class="year pinput" maxlength="3">
+                                            </div>
+                                        </div>
+                                        <div class="p-btn btn-primary">
+                                            <p>Pay $108.00</p>
+                                        </div>
+                                        <div class="p-btn btn-secondary back">
+                                            <p>Back</p>
+                                        </div>
+                                        <div class="note">
+                                            <p>Your card details will be securely saved for faster payments.</p>
+                                            <p>Your CVV will not be stored.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="net-banking">
+                                    <div class="pradio2"></div>
+                                    <div class="net-banking-details">
+                                        <i class="fas fa-globe"></i>
+                                        <p>Net Banking</p>
+                                    </div>
+                                </div>
+                                <div class="wallet">
+                                    <div class="pradio3"></div>
+                                    <div class="wallet-details">
+                                        <i class="fas fa-wallet"></i>
+                                        <p>Google / Apple Wallet</p>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
 
 
                         <!-- form ends -->
                     </div>
+
                     <div class="cont-right">
                         <div class="sub-cont-right">
                             <p class="heading">Your Order</p>
@@ -178,6 +243,7 @@
 
 
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cleave.js/1.6.0/cleave.min.js"></script>
     <script src="app.js"></script>
 </body>
 </html>
