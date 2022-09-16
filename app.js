@@ -43,7 +43,7 @@ back.addEventListener('click', () => {
     b.style.color = "#fff";
 });
 
-var x;
+var x = "none";
 
 var cleave = new Cleave(".card-input", {
   creditCard: true,
@@ -79,6 +79,9 @@ var cleave = new Cleave(".month", {
 let p_radio1 = document.querySelector(".pradio1");
 let p_radio2 = document.querySelector(".pradio2");
 let p_radio3 = document.querySelector(".pradio3");
+let card_container = document.querySelector(".card-container")
+
+console.log(card_container.classList);
 
 p_radio1.addEventListener('click', () => {
     p_radio1.style.background = "#000"; 
@@ -86,6 +89,7 @@ p_radio1.addEventListener('click', () => {
     p_radio2.style.border = "1.5px solid #666";
     p_radio3.style.background = "transparent";
     p_radio3.style.border = "1.5px solid #666";
+    card_container.classList.add("show");
 });
 
 p_radio2.addEventListener("click", () => {
@@ -94,6 +98,7 @@ p_radio2.addEventListener("click", () => {
   p_radio1.style.border = "1.5px solid #666";
   p_radio3.style.background = "transparent";
   p_radio3.style.border = "1.5px solid #666";
+  card_container.classList.remove("show");
 });
 
 p_radio3.addEventListener("click", () => {
@@ -102,4 +107,6 @@ p_radio3.addEventListener("click", () => {
   p_radio2.style.border = "1.5px solid #666";
   p_radio1.style.background = "transparent";
   p_radio1.style.border = "1.5px solid #666";
+  card_container.classList.remove("show");
 });
+

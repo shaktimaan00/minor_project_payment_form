@@ -56,6 +56,7 @@ body{
 .container-box{
     display: flex;
     /* flex-wrap: wrap; */
+    gap: 10px;
     align-items: flex-start;
     justify-content: space-between;
 }
@@ -393,7 +394,7 @@ input:focus{
 
 .cont-right{
     /* position: relative; */
-    width: 272px;
+    width: 280px;
     height: 100%;
     border-radius: 8px;
     background: #fff;
@@ -428,6 +429,7 @@ input:focus{
     width: 100%;
     display: flex;
     /* align-items: center; */
+    justify-content: space-around;
     gap: 10px;
 }
 
@@ -623,9 +625,14 @@ input:focus{
 .card-details .main1-heading{
     display: flex;
     align-items: center;
-    font-size: 18px;
+    font-size: 15px;
+    color: #222;
     gap: 20px;
     margin-bottom: 14px;
+}
+
+.card-container{
+    display: none;
 }
 
 .card-details .main1-heading i{
@@ -760,7 +767,7 @@ input:focus{
 
 @media screen and (max-width: 768px) {
     .container-box{
-        flex-wrap: wrap;
+        flex-wrap: wrap-reverse;
     }
 
     .cont-left{
